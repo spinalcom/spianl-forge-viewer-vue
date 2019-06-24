@@ -1,0 +1,16 @@
+{
+  "name": "spinal-forge-viewer-vue",
+  "version": "1.0.0",
+  "description": "Encapsulation of Forge viewer to Display 2D/3D model in a SpinalCom Environment",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [ "Forge", "Spinalcom", "BIM", "3D", "2D"],
+  "author": "Spinalcom",
+  "license": "Spinalcom",
+  "dependencies": {
+    "spinal-forge-viewer": "git+https://github.com/spinalcom/spinal-forge-viewer.git",
+    "vue": "^2.6.10"
+  }
+}

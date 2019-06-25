@@ -1,3 +1,3 @@
-import SpinalForgeViewerVue  from "./SpinalForgeViewerVue";
+import SpinalForgeViewerVue  from "./SpinalForgeViewerVue.vue";
 
 export {SpinalForgeViewerVue};

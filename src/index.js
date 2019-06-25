@@ -1,1 +1,3 @@
-export SpinalForgeViewerVue  from "./SpinalForgeViewerVue";
+import SpinalForgeViewerVue  from "./SpinalForgeViewerVue";
+
+export {SpinalForgeViewerVue};

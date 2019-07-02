@@ -4,34 +4,27 @@
 
 <script>
   import {
-    ForgeViewer,
-    SpinalForgeViewer
+    ForgeViewer
   } from "spinal-forge-viewer";
 
   export default {
     name: "SpinalForgeViewerVue",
     props: {
       modelProperty: {
-        type : Object,
-        required : false,
+        type: Object,
+        required: false,
         validator( value ) {
-          return (value.hasOwnProperty("isInteractive") &&
-            value.hasOwnProperty("path")) || value.hasOwnProperty("path")
+          return (value.hasOwnProperty( "isInteractive" ) &&
+            value.hasOwnProperty( "path" )) || value.hasOwnProperty( "path" )
         }
       },
       onInitialize: {
         type: Function,
         required: true
       },
-      basicViewer: {
-        type:Boolean,
-        default : function () {
-          return false;
-        }
-      },
       headless: {
         type: Boolean,
-        default : function () {
+        default: function () {
           return false;
         }
       }
@@ -39,24 +32,22 @@
 
     data: function () {
       return {
-        viewerManager : null
+        viewerManager: null
       }
     },
     mounted() {
 
       const viewerContainer = document
-        .getElementById("spinal-forge-viewer");
-      if (this.basicViewer)
-        this.viewerManager = new ForgeViewer(viewerContainer, this.headless);
-      else
-        this.viewerManager = new SpinalForgeViewer(viewerContainer,
-          this.headless);
+        .getElementById( "spinal-forge-viewer" );
+
+      this.viewerManager = new ForgeViewer( viewerContainer, this.headless );
+
 
       if (this.modelProperty) {
-        this.viewerManager.start(this.modelProperty.path,
-          !!this.modelProperty.isInteractive);
+        this.viewerManager.start( this.modelProperty.path,
+          !!this.modelProperty.isInteractive );
       }
-      this.onInitialize(this.viewerManager);
+      this.onInitialize( this.viewerManager );
 
     },
 

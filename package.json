@@ -6,7 +6,13 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [ "Forge", "Spinalcom", "BIM", "3D", "2D"],
+  "keywords": [
+    "Forge",
+    "Spinalcom",
+    "BIM",
+    "3D",
+    "2D"
+  ],
   "author": "Spinalcom",
   "license": "Spinalcom",
   "dependencies": {

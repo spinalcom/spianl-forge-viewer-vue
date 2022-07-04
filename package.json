@@ -1,6 +1,6 @@
 {
   "name": "spinal-forge-viewer-vue",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Encapsulation of Forge viewer to Display 2D/3D model in a SpinalCom Environment",
   "main": "src/index.js",
   "scripts": {

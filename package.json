@@ -17,7 +17,7 @@
   "license": "Spinalcom",
   "dependencies": {
     "spinal-forge-viewer": "git+https://github.com/spinalcom/spinal-forge-viewer.git",
-    "vue": "^2.6.10"
+    "vue": "^3.0.0"
   },
   "browserify": {
     "transform": [
